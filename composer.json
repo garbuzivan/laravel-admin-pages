@@ -1,0 +1,41 @@
+{
+    "name": "garbuzivan/laravel-admin-pages",
+    "description": "A system for managing static site pages based on Laravel Admin",
+    "type": "library",
+    "require": {
+        "garbuzivan/imagemanager": "^v0.0.1",
+        "encore/laravel-admin": "^1.8",
+        "laravel-admin-ext/ckeditor": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.3",
+        "mockery/mockery": ">=1.3"
+    },
+    "authors": [
+        {
+            "name": "Garbuz Ivan",
+            "email": "garbuzivan90@ya.ru"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "GarbuzIvan\\LaravelAdminPages\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "GarbuzIvan\\LaravelAdminPages\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+              "GarbuzIvan\\LaravelAdminPages\\LaravelAdminPagesServiceProvider"
+            ]
+        }
+    }
+}
