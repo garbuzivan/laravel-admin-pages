@@ -11,7 +11,7 @@
 
 <p>config/app.php в блок 'providers' => []</p>
 
-`GarbuzIvan\LaravelAdminPages\LaravelAdminPagesServiceProvider::class,`
+`GarbuzIvan\LaravelAdminPages\LaravelAdminPagesServiceProvider::class,` 
 
 ## Тестирование
 <pre>
