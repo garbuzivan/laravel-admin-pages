@@ -4,7 +4,7 @@
 
 `composer require garbuzivan/laravel-admin-pages`
 
-<p>и опубликовать конфигурацию</p>
+<p>и опубликовать конфигурацию</p> 
 
 `php artisan vendor:publish  --force --provider="GarbuzIvan\LaravelAdminPages\LaravelAdminPagesServiceProvider" --tag="config"`
 
