@@ -2,16 +2,14 @@
 
 declare(strict_types=1);
 
-namespace GarbuzIvan\LaravelAdminPages;
-
-use GarbuzIvan\LaravelAdminPages\Pipes\AbstractPipes;
+namespace GarbuzIvan\LaravelPages;
 
 class Configuration
 {
     /**
      * @var string
      */
-    protected string $configFile = 'laravel-admin-pages';
+    protected string $configFile = 'laravel-pages';
 
     /**
      * The array of class pipes.
@@ -50,9 +48,9 @@ class Configuration
     {
         $this->pipes = [];
         foreach ($pipes as $pipe) {
-            if (get_parent_class($pipe) == AbstractPipes::class) {
+            //if (get_parent_class($pipe) == AbstractPipes::class) {
                 $this->pipes[] = $pipe;
-            }
+            //}
         }
     }
 

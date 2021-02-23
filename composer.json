@@ -20,12 +20,12 @@
     "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
-            "GarbuzIvan\\LaravelAdminPages\\": "src/"
+            "GarbuzIvan\\LaravelPages\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "GarbuzIvan\\LaravelAdminPages\\Tests\\": "tests/"
+            "GarbuzIvan\\LaravelPages\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -34,7 +34,7 @@
     "extra": {
         "laravel": {
             "providers": [
-              "GarbuzIvan\\LaravelAdminPages\\LaravelAdminPagesServiceProvider"
+              "GarbuzIvan\\LaravelPages\\LaravelPagesServiceProvider"
             ]
         }
     }

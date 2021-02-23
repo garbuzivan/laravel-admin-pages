@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace GarbuzIvan\LaravelAdminPages;
+namespace GarbuzIvan\LaravelPages;
 
 use Illuminate\Support\ServiceProvider;
 
-class LaravelAdminPagesServiceProvider extends ServiceProvider
+class LaravelPagesServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services...
@@ -17,7 +17,7 @@ class LaravelAdminPagesServiceProvider extends ServiceProvider
     {
         $configPath = $this->configPath();
         $this->publishes([
-            $configPath . '/laravel-admin-pages.php' => $this->publishPath('laravel-admin-pages.php'),
+            $configPath . '/laravel-pages.php' => $this->publishPath('laravel-pages.php'),
         ], 'config');
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'gi_la_pages');
         $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'gi_la_pages');
