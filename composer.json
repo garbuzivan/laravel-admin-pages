@@ -3,7 +3,7 @@
     "description": "A system for managing static site pages based on Laravel Admin",
     "type": "library",
     "require": {
-        "garbuzivan/imagemanager": "^v0.0.1",
+        "garbuzivan/imagemanager": "dev-main",
         "encore/laravel-admin": "^1.8",
         "laravel-admin-ext/ckeditor": "^1.0"
     },
