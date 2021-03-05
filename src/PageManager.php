@@ -16,8 +16,8 @@ class PageManager
         $this->config = $config;
     }
 
-    public function getAll()
+    public function getAll(): bool
     {
-
+        return true;
     }
 }
