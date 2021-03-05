@@ -15,4 +15,9 @@ class PageManager
     {
         $this->config = $config;
     }
+
+    public function getAll()
+    {
+
+    }
 }

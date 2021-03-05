@@ -20,13 +20,10 @@ class Configuration
 
     /**
      * Configuration constructor.
-     * @param Configuration|null $config
      */
-    public function __construct(Configuration $config = null)
+    public function __construct()
     {
-        if (is_null($config)) {
-            $this->load();
-        }
+        $this->load();
     }
 
     /**
