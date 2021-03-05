@@ -11,14 +11,8 @@ class PageManager
      */
     protected $config;
 
-    /**
-     * @var CodeManager $manager
-     */
-    protected $manager;
-
     public function __construct(Configuration $config)
     {
         $this->config = $config;
-        $this->manager = new CodeManager($config);
     }
 }

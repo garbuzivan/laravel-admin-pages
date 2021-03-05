@@ -1,10 +1,10 @@
 <?php
-// Laravel Auth API
+// Laravel Page Manager
 
 return [
 
     // methods
-    'pipes' => [
+    'plugins' => [
 
     ],
 

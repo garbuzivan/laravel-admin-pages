@@ -16,7 +16,7 @@ class Configuration
      *
      * @var array
      */
-    protected array $pipes = [];
+    protected array $plugins = [];
 
     /**
      * Configuration constructor.
@@ -34,41 +34,34 @@ class Configuration
      */
     public function load(): Configuration
     {
-        $pipes = config($this->configFile . '.pipes');
-        if(is_array($pipes)){
-            $this->setPipes($pipes);
+        $plugins = config($this->configFile . '.plugins');
+        if (is_array($plugins)) {
+            $this->setPlugins($plugins);
         }
         return $this;
     }
 
     /**
-     * @param array $pipes
+     * @param array $plugins
      */
-    public function setPipes(array $pipes): void
+    public function setPlugins(array $plugins): void
     {
-        $this->pipes = [];
-        foreach ($pipes as $pipe) {
-            //if (get_parent_class($pipe) == AbstractPipes::class) {
-                $this->pipes[] = $pipe;
-            //}
-        }
+        $this->plugins = $plugins;
     }
 
     /**
-     * @param string $pipe
+     * @param string $plugin
      */
-    public function setPipe(string $pipe): void
+    public function setPlugin(string $plugin): void
     {
-        if (get_parent_class($pipe) == AbstractPipes::class) {
-            $this->pipes[] = $pipe;
-        }
+        $this->plugins[] = $plugin;
     }
 
     /**
      * @return array
      */
-    public function getPipes(): array
+    public function getPlugins(): array
     {
-        return $this->pipes;
+        return $this->plugins;
     }
 }
