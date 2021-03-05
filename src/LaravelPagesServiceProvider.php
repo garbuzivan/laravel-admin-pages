@@ -31,6 +31,7 @@ class LaravelPagesServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        $this->app->singleton(PageManager::class);
     }
 
     /**
